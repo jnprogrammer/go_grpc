@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	listen, err := net.listen("tcp", ":9000")
+	listen, err := net.Listen("tcp", ":9000")
 	if err != nil {
 		log.Fatalf("Failed to listen on port 9000: %v", err)
 	}
