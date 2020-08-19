@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message SearchRequest {
+    string query = 1;
+    int32 page_num = 2; //page requested
+    int32 result_per_page = 3; //number of results per page
+}
+
+/*
+multi line comment in proto
+*/
+
+message foo{
+    reserved 1, 3, 420 to 710;
+    reserved "Dank", "Fire";
+}
+
