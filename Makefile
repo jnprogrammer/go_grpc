@@ -2,7 +2,7 @@ gen:
 	protoc --proto_path=protocals protocals/*.proto --go_out=plugins=grpc:pb
 
 clean:
-	rm pb/*.proto
+	rm pb/*.go
 
 run:
-	go main.go
+	go run main.go
