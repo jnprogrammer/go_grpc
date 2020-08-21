@@ -1,0 +1,12 @@
+syntax ="proto3";
+package main.go;
+
+message CPU{
+  string brand = 1; //CPU brand
+  string name = 2; //CPU model
+  uint32 num_cores = 3;
+  uint32 num_threads = 4;
+  double base_ghz = 5;
+  double boost_ghz = 6;
+}
+
