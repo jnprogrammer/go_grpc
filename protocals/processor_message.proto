@@ -2,17 +2,17 @@ syntax = "proto3";
 
 package cpustats.pcbook;
 
-option go_package = "pb";
+option go_package = "./pb";
 
-import "memory_message.proto";
+//import "memory_message.proto";
 
 message CPU {
   string brand = 1; //CPU brand
   string name = 2; //CPU model
   uint32 num_cores = 3;
   uint32 num_threads = 4;
-  double base_ghz = 5;
-  double boost_ghz = 6;
+  double min_ghz = 5;
+  double max_ghz = 6;
 }
 
 message GPU {
@@ -20,8 +20,8 @@ message GPU {
   string name = 2; //CPU model
   uint32 num_cores = 3;
   uint32 num_threads = 4;
-  double base_ghz = 5;
-  double boost_ghz = 6;
+  double min_ghz = 5;
+  double max_ghz = 6;
   // Memory
 }
 

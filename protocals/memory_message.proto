@@ -2,6 +2,9 @@ syntax = "proto3";
 
 package cpustats.pcbook;
 
+option go_package = "./pb";
+
+
 message Memory {
     enum Unit {
       UNKNOWN = 0;
