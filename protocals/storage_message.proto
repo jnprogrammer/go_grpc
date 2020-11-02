@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package cpustats.pcbook;
 
+option go_package = "pb";
+
 message Storage{
   enum Driver{
     UNKNOWN = 0;
