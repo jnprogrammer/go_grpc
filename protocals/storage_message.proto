@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package cpustats.pcbook;
+
+message Storage{
+  enum Driver{
+    UNKNOWN = 0;
+    HDD = 1;
+    SSH = 2;
+  }
+
+  Driver driver = 1;
+}

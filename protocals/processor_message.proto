@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package cpustats.pcbook;
 
-option go_package = "./pb";
+option go_package = "./";
 
-//import "memory_message.proto";
+//import "protocals/memory_message.proto";
 
 message CPU {
   string brand = 1; //CPU brand
